@@ -9,7 +9,7 @@ int main() {
     for (int i = 1; i <= 10; i++) {
         int a = rand() % 21, b = rand() % 21;
         int op = rand() % 4;
-        printf("[%d/10] %d %c %d = ", i , oper[op], a, b);
+        printf("[%d/10] %d %c %d = ", i , a, oper[op], b);
         int ans;
         switch (op) {
             case 0:
@@ -25,6 +25,8 @@ int main() {
                 ans = a / b;
                 break;
         }
-        printf("%d\n", ans);
+        int res;
+        scanf("%d", &res);
+        printf("%d\n", res);
     }
 }
