@@ -27,6 +27,7 @@ int main() {
         }
         int res;
         scanf("%d", &res);
-        printf("%d\n", res);
+        if (res == ans) printf("Correct!\n");
+        else printf("Wrong! Answer is %d\n", ans);
     }
 }
